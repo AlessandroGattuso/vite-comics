@@ -95,6 +95,8 @@
 <style lang="sass">
     @use '../styles/general' as *
     @use '../styles/partials/variables' as * 
+    @use '../styles/partials/mixins' as * 
+    
     .dc-background
       background: url(src/assets/img/footer-bg.jpg)
       background-repeat:no-repeat
@@ -116,7 +118,7 @@
       margin-bottom: .5rem
     
     .lists-container
-      padding: 1.5rem
+      padding: 1.5rem 0
       gap: 20px
     
     .dc-logo-bg
@@ -127,7 +129,7 @@
       background-size: cover
 
     .bg-lightblack
-      padding: 1.5rem
+      padding: 1.5rem 0
 
     .media-container
       gap: 25px
