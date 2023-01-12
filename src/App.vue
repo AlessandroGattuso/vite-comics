@@ -18,6 +18,8 @@
   <AppFooter></AppFooter>
 </template>
 
-<style lang="" scoped>
-
+<style lang="sass" scoped>
+    // @use './styles/general' as *
+    // @use './styles/partials/variables' as * 
+    // @use './styles/partials/mixins' as * 
 </style>

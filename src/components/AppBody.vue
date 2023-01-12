@@ -1,6 +1,32 @@
 <script>
 export default {
-  name: 'AppBody'
+  name: 'AppBody',
+  data(){
+    return{
+        shopMenu: [
+          {
+            label: 'digital comics',
+            path: 'src/assets/img/buy-comics-digital-comics.png'
+          },
+          {
+            label: 'dc merchandise',
+            path: 'src/assets/img/buy-comics-merchandise.png'
+          },
+          {
+            label: 'subscription',
+            path: 'src/assets/img/buy-comics-subscriptions.png'
+          },
+          {
+            label: 'comic shop locator',
+            path: 'src/assets/img/buy-comics-shop-locator.png'
+          },
+          {
+            label: 'dc power visa',
+            path: 'src/assets/img/buy-dc-power-visa.svg'
+          }
+        ]
+    }
+  }
 }
 </script>
 <template>
@@ -11,25 +37,9 @@ export default {
   </div>
   <div class="container-fluid shop-container">
     <div class="container flex flex-align-center text-white h-100">
-      <div class="flex flex-align-center cursor-pointer">
-        <img src="../assets/img/buy-comics-digital-comics.png" alt="Image not found">
-        <span>DIGITAL COMICS</span>
-      </div>
-      <div class="flex flex-align-center cursor-pointer">
-        <img src="../assets/img/buy-comics-merchandise.png" alt="Image not found">
-        <span>DC MERCHANDISE</span>
-      </div>
-      <div class="flex flex-align-center cursor-pointer">
-        <img src="../assets/img/buy-comics-subscriptions.png" alt="Image not found">
-        <span>SUBSCRIPTION</span>
-      </div>
-      <div class="flex flex-align-center cursor-pointer">
-        <img src="../assets/img/buy-comics-shop-locator.png" alt="Image not found">
-        <span>COMIC SHOP LOCATOR</span>
-      </div>
-      <div class="flex flex-align-center cursor-pointer">
-        <img src="../assets/img/buy-dc-power-visa.svg" alt="Image not found">
-        <span>DC POWER VISA</span>
+      <div class="flex flex-align-center cursor-pointer shop-item" v-for="(item,index) in shopMenu" :key="index">
+        <img :src="item.path" alt="Image not found">
+        <span>{{ item.label }}</span>
       </div>
     </div>
   </div>
@@ -37,7 +47,8 @@ export default {
 <style lang="sass">
   @use '../styles/general' as *
   @use '../styles/partials/variables' as * 
-  
+  @use '../styles/partials/mixins' as * 
+
   .comic-container
       padding: 2rem 0 
 
@@ -47,6 +58,8 @@ export default {
       .container
         font-size: 13px
         justify-content: space-evenly
+        .shop-item
+          text-transform: uppercase
       img
         width: 30px
         margin-right: 10px

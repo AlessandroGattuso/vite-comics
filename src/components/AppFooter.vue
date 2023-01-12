@@ -96,7 +96,7 @@
     @use '../styles/general' as *
     @use '../styles/partials/variables' as * 
     @use '../styles/partials/mixins' as * 
-    
+
     .dc-background
       background: url(src/assets/img/footer-bg.jpg)
       background-repeat:no-repeat
@@ -143,9 +143,13 @@
           cursor: pointer
       
     button
+      cursor: pointer
       padding: 0.5rem
       color: white
       background-color: transparent
       border: 1.5px solid $primary
+      transition: background-color .5s
+      &:hover
+        background-color: $primary
 
 </style>

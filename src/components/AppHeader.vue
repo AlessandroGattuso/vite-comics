@@ -63,7 +63,9 @@ export default {
 </template>
 <style lang="sass" scoped>
   @use '../styles/general' as *
-  @use '../styles/partials/variables' as *
+  @use '../styles/partials/variables' as * 
+  @use '../styles/partials/mixins' as * 
+
   header
     height: 80px
   
