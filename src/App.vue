@@ -18,5 +18,6 @@
   <AppFooter></AppFooter>
 </template>
 
-<style lang="sass" scoped>
+<style lang="sass">
+  @use './styles/general' as *
 </style>

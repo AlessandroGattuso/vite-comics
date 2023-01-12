@@ -86,10 +86,9 @@
     </div>
   </footer>
 </template>
-<style lang="sass">
+<style lang="sass" scoped>
     @use '../styles/partials/variables' as *
     @use '../styles/partials/mixins' as *
-    @use '../styles/general' as *
 
     .dc-background
       background: url(src/assets/img/footer-bg.jpg)
