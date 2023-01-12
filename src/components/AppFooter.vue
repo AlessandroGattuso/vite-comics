@@ -15,7 +15,7 @@
         <div class="flex lists-container">
           <div>
             <div>
-              <h4>DC COMICS</h4>
+              <h3>DC COMICS</h3>
               <ul>
                 <li>Characters</li>
                 <li>Comics</li>
@@ -27,7 +27,7 @@
               </ul>
             </div>
             <div>
-              <h4>SHOP</h4>
+              <h3>SHOP</h3>
               <ul>
                 <li>Shop DC</li>
                 <li>Shop DC Collectibles</li>
@@ -35,7 +35,7 @@
             </div>
           </div>
           <div>
-            <h4>DC</h4>
+            <h3>DC</h3>
             <ul>
               <li>Terms Of Use</li>
               <li>Privacy policy(New)</li>
@@ -51,7 +51,7 @@
             </ul>
           </div>
           <div>
-            <h4>SITES</h4>
+            <h3>SITES</h3>
             <ul>
               <li>DC</li>
               <li>MAD Magazine</li>
@@ -107,13 +107,13 @@
 
     li
       line-height: 17px
-      font-size: 10px
+      font-size: 13px
       color: grey
       &:hover
           cursor: pointer
           color: white
 
-    h4
+    h3
       font-weight: 600
       margin-bottom: .5rem
     
@@ -132,6 +132,7 @@
       padding: 1.5rem 0
 
     .media-container
+      font-size: 19px
       gap: 25px
       span
         color: $primary
@@ -143,6 +144,7 @@
           cursor: pointer
       
     button
+      font-size: 17px
       cursor: pointer
       padding: 0.5rem
       color: white

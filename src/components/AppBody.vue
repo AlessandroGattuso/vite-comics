@@ -56,7 +56,7 @@ export default {
       padding: 2rem 0 
       background-color: $primary
       .container
-        font-size: 13px
+        font-size: 16px
         justify-content: space-evenly
         .shop-item
           text-transform: uppercase

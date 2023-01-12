@@ -76,7 +76,7 @@ export default {
     display: flex
     gap: 20px
     li
-      font-size: 11px
+      font-size: 13px
       font-weight: 700
       flex-basis: calc(100% / 11)
       text-transform: uppercase
