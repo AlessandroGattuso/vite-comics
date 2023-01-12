@@ -91,6 +91,7 @@ export default {
     background-color: $primary
     border: none
     cursor: pointer
+    font-size: 16px
     transition: all .5s
     &:hover
       background-color: #2395ff
