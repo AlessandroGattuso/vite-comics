@@ -45,9 +45,9 @@ export default {
   </div>
 </template>
 <style lang="sass">
+  @use '../styles/partials/variables' as *
+  @use '../styles/partials/mixins' as *
   @use '../styles/general' as *
-  @use '../styles/partials/variables' as * 
-  @use '../styles/partials/mixins' as * 
 
   .comic-container
       padding: 2rem 0 

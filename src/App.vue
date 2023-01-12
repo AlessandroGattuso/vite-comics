@@ -19,7 +19,7 @@
 </template>
 
 <style lang="sass" scoped>
-    // @use './styles/general' as *
-    // @use './styles/partials/variables' as * 
-    // @use './styles/partials/mixins' as * 
+    @use './styles/partials/variables' as *
+    @use './styles/partials/mixins' as *
+    @use './styles/general' as *
 </style>

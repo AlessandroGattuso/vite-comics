@@ -62,9 +62,9 @@ export default {
   </header>
 </template>
 <style lang="sass" scoped>
+  @use '../styles/partials/variables' as *
+  @use '../styles/partials/mixins' as *
   @use '../styles/general' as *
-  @use '../styles/partials/variables' as * 
-  @use '../styles/partials/mixins' as * 
 
   header
     height: 80px
@@ -80,12 +80,11 @@ export default {
       font-weight: 700
       flex-basis: calc(100% / 11)
       text-transform: uppercase
+      border-bottom: 4px solid transparent
       &:hover,&.active
         color: $primary
-      
-      &.active
-        border-bottom: 5px solid $primary
-    
+        border-bottom: 4px solid $primary
+          
   
   .logo
     height: 55px
