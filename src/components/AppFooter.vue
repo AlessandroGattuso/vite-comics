@@ -129,7 +129,7 @@
       background-size: cover
 
     .bg-lightblack
-      padding: 1.5rem 0
+      padding: 1.06rem 0
 
     .media-container
       font-size: 19px
