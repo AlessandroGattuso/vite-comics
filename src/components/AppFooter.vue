@@ -3,7 +3,13 @@
       name: 'AppFooter',
       data(){
         return{
-
+          media: [
+             'facebook',
+             'twitter',
+             'youtube',
+             'pinterest',
+             'periscope'
+          ]
         }
       }
   }
@@ -72,20 +78,8 @@
             <div class="flex flex-align-center">
               <span>FOLLOW US</span>
             </div>
-            <div class="flex flex-align-center">
-              <img src="../assets/img/footer-facebook.png" alt="Image not found">
-            </div>
-            <div class="flex flex-align-center">
-              <img src="../assets/img/footer-twitter.png" alt="Image not found">
-            </div>
-            <div class="flex flex-align-center">
-              <img src="../assets/img/footer-youtube.png" alt="Image not found">
-            </div>
-            <div class="flex flex-align-center">
-              <img src="../assets/img/footer-pinterest.png" alt="Image not found">
-            </div>
-            <div class="flex flex-align-center">
-              <img src="../assets/img/footer-periscope.png" alt="Image not found">
+            <div class="flex flex-align-center" v-for="(item, index) in media" :key="index">
+              <img :src="`src/assets/img/footer-${item}.png`" alt="Image not found">
             </div>
           </div>
         </div>

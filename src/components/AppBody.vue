@@ -48,7 +48,7 @@ export default {
   @use '../styles/partials/variables' as *
   @use '../styles/partials/mixins' as *
   @use '../styles/general' as *
-
+  
   .comic-container
       padding: 2rem 0 
 
