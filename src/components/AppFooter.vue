@@ -133,7 +133,7 @@
 
     .media-container
       font-size: 19px
-      gap: 25px
+      gap: 15px
       span
         color: $primary
         font-weight: 600
