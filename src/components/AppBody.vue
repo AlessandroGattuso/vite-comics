@@ -1,6 +1,6 @@
 <script>
 import AppCard from './AppCard.vue'
-import cardJSON from '/src/assets/JSON/dc-comics.json'
+import cardsData from '/src/assets/JSON/dc-comics.json'
 
 export default {
   name: 'AppBody',
@@ -9,7 +9,7 @@ export default {
   },
   data(){
     return{
-        cardsData: cardJSON,
+        cardsData,
         shopMenu: [
           {
             label: 'digital comics',
